@@ -265,6 +265,12 @@ class Target extends EventEmitter {
      */
     createVariable (id, name, type, isCloud) {
         if (!this.variables.hasOwnProperty(id)) {
+ 	    if(isCloud){
+	    	name = "stage." + name;
+	    }
+            else{
+	    	name = "self." + name;
+	    }
             const newVariable = new Variable(id, name, type, false);
             if (isCloud && this.isStage && this.runtime.canAddCloudVariable()) {
                 newVariable.isCloud = true;

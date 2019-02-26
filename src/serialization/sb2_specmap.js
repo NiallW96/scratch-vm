@@ -721,6 +721,11 @@ const specMap = {
     'whenGreenFlag': {
         opcode: 'event_whenflagclicked',
         argMap: [
+	    {
+		type: 'input',
+                inputOp: 'text',
+                inputName: 'NAME'
+	    }
         ]
     },
     'whenKeyPressed': {
