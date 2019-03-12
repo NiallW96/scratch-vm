@@ -114,7 +114,7 @@ class Scratch3TranslateBlocks {
                     opcode: 'getTranslate',
                     text: formatMessage({
                         id: 'translate.translateBlock',
-                        default: 'translate [WORDS] to [LANGUAGE]',
+                        default: 'stage.translate_to([WORDS], [LANGUAGE])',
                         description: 'translate some text to a different language'
                     }),
                     blockType: BlockType.REPORTER,
@@ -138,7 +138,7 @@ class Scratch3TranslateBlocks {
                     opcode: 'getViewerLanguage',
                     text: formatMessage({
                         id: 'translate.viewerLanguage',
-                        default: 'language',
+                        default: 'stage.language',
                         description: 'the languge of the project viewer'
                     }),
                     blockType: BlockType.REPORTER,

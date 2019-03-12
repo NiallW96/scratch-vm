@@ -441,7 +441,7 @@ class Scratch3VideoSensingBlocks {
                     blockType: BlockType.REPORTER,
                     text: formatMessage({
                         id: 'videoSensing.videoOn',
-                        default: 'video [ATTRIBUTE] on [SUBJECT]',
+                        default: 'stage.video_attribute_on([ATTRIBUTE], [SUBJECT])',
                         description: 'Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]'
                     }),
                     arguments: {
@@ -461,7 +461,7 @@ class Scratch3VideoSensingBlocks {
                     opcode: 'videoToggle',
                     text: formatMessage({
                         id: 'videoSensing.videoToggle',
-                        default: 'turn video [VIDEO_STATE]',
+                        default: 'stage.turn_video([VIDEO_STATE])',
                         description: 'Controls display of the video preview layer'
                     }),
                     arguments: {
@@ -476,7 +476,7 @@ class Scratch3VideoSensingBlocks {
                     opcode: 'setVideoTransparency',
                     text: formatMessage({
                         id: 'videoSensing.setVideoTransparency',
-                        default: 'set video transparency to [TRANSPARENCY]',
+                        default: 'stage.set_video_transparency_to([TRANSPARENCY])',
                         description: 'Controls transparency of the video preview layer'
                     }),
                     arguments: {

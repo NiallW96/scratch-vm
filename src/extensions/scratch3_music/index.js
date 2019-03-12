@@ -768,7 +768,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.playDrumForBeats',
-                        default: 'play drum [DRUM] for [BEATS] beats',
+                        default: 'stage.play_drum_for_beats([DRUM], [BEATS])',
                         description: 'play drum sample for a number of beats'
                     }),
                     arguments: {
@@ -788,7 +788,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.midiPlayDrumForBeats',
-                        default: 'play drum [DRUM] for [BEATS] beats',
+                        default: 'stage.play_drum [DRUM] for [BEATS] beats',
                         description: 'play drum sample for a number of beats according to a mapping of MIDI codes'
                     }),
                     arguments: {
@@ -809,7 +809,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.restForBeats',
-                        default: 'rest for [BEATS] beats',
+                        default: 'stage.rest_for_beats([BEATS])',
                         description: 'rest (play no sound) for a number of beats'
                     }),
                     arguments: {
@@ -824,7 +824,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.playNoteForBeats',
-                        default: 'play note [NOTE] for [BEATS] beats',
+                        default: 'stage.play_note_for_beats([NOTE], [BEATS])',
                         description: 'play a note for a number of beats'
                     }),
                     arguments: {
@@ -843,7 +843,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.setInstrument',
-                        default: 'set instrument to [INSTRUMENT]',
+                        default: 'stage.set_instrument_to([INSTRUMENT])',
                         description: 'set the instrument (e.g. piano, guitar, trombone) for notes played'
                     }),
                     arguments: {
@@ -875,7 +875,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.setTempo',
-                        default: 'set tempo to [TEMPO]',
+                        default: 'stage.set_tempo_to([TEMPO])',
                         description: 'set tempo (speed) for notes, drums, and rests played'
                     }),
                     arguments: {
@@ -890,7 +890,7 @@ class Scratch3MusicBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'music.changeTempo',
-                        default: 'change tempo by [TEMPO]',
+                        default: 'stage.change_tempo_by([TEMPO])',
                         description: 'change tempo (speed) for notes, drums, and rests played'
                     }),
                     arguments: {
@@ -904,7 +904,7 @@ class Scratch3MusicBlocks {
                     opcode: 'getTempo',
                     text: formatMessage({
                         id: 'music.getTempo',
-                        default: 'tempo',
+                        default: 'stage.tempo',
                         description: 'get the current tempo (speed) for notes, drums, and rests played'
                     }),
                     blockType: BlockType.REPORTER

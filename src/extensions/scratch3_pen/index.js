@@ -295,7 +295,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.clear',
-                        default: 'erase all',
+                        default: 'stage.erase_all()',
                         description: 'erase all pen trails and stamps'
                     })
                 },
@@ -304,7 +304,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.stamp',
-                        default: 'stamp',
+                        default: 'stage.stamp()',
                         description: 'render current costume on the background'
                     })
                 },
@@ -313,7 +313,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.penDown',
-                        default: 'pen down',
+                        default: 'stage.pen_down()',
                         description: 'start leaving a trail when the sprite moves'
                     })
                 },
@@ -322,7 +322,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.penUp',
-                        default: 'pen up',
+                        default: 'stage.pen_up()',
                         description: 'stop leaving a trail behind the sprite'
                     })
                 },
@@ -331,7 +331,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.setColor',
-                        default: 'set pen color to [COLOR]',
+                        default: 'stage.set_pen_color_to([COLOR])',
                         description: 'set the pen color to a particular (RGB) value'
                     }),
                     arguments: {
@@ -345,7 +345,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.changeColorParam',
-                        default: 'change pen [COLOR_PARAM] by [VALUE]',
+                        default: 'stage.change_pen_color_param_by([COLOR_PARAM], [VALUE])',
                         description: 'change the state of a pen color parameter'
                     }),
                     arguments: {
@@ -365,7 +365,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.setColorParam',
-                        default: 'set pen [COLOR_PARAM] to [VALUE]',
+                        default: 'stage.set_pen_color_param_to([COLOR_PARAM], [VALUE])',
                         description: 'set the state for a pen color parameter e.g. saturation'
                     }),
                     arguments: {
@@ -385,7 +385,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.changeSize',
-                        default: 'change pen size by [SIZE]',
+                        default: 'stage.change_pen_size_by([SIZE])',
                         description: 'change the diameter of the trail left by a sprite'
                     }),
                     arguments: {
@@ -400,7 +400,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.setSize',
-                        default: 'set pen size to [SIZE]',
+                        default: 'stage.set_pen_size_to([SIZE])',
                         description: 'set the diameter of a trail left by a sprite'
                     }),
                     arguments: {

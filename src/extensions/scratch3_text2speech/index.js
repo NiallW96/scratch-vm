@@ -280,7 +280,7 @@ class Scratch3Text2SpeechBlocks {
                     opcode: 'speakAndWait',
                     text: formatMessage({
                         id: 'text2speech.speakAndWaitBlock',
-                        default: 'speak [WORDS]',
+                        default: 'stage.speak([WORDS])',
                         description: 'Speak some words.'
                     }),
                     blockType: BlockType.COMMAND,
@@ -295,7 +295,7 @@ class Scratch3Text2SpeechBlocks {
                     opcode: 'setVoice',
                     text: formatMessage({
                         id: 'text2speech.setVoiceBlock',
-                        default: 'set voice to [VOICE]',
+                        default: 'stage.set_voice_to([VOICE])',
                         description: 'Set the voice for speech synthesis.'
                     }),
                     blockType: BlockType.COMMAND,
@@ -311,7 +311,7 @@ class Scratch3Text2SpeechBlocks {
                     opcode: 'setLanguage',
                     text: formatMessage({
                         id: 'text2speech.setLanguageBlock',
-                        default: 'set language to [LANGUAGE]',
+                        default: 'stage.set_language_to([LANGUAGE])',
                         description: 'Set the language for speech synthesis.'
                     }),
                     blockType: BlockType.COMMAND,
