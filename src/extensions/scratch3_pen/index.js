@@ -345,7 +345,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.changeColorParam',
-                        default: 'stage.change_pen_color_param_by([COLOR_PARAM], [VALUE])',
+                        default: 'stage.change_pen_effect_by([COLOR_PARAM], [VALUE])',
                         description: 'change the state of a pen color parameter'
                     }),
                     arguments: {
@@ -365,7 +365,7 @@ class Scratch3PenBlocks {
                     blockType: BlockType.COMMAND,
                     text: formatMessage({
                         id: 'pen.setColorParam',
-                        default: 'stage.set_pen_color_param_to([COLOR_PARAM], [VALUE])',
+                        default: 'stage.set_pen_effect_to([COLOR_PARAM], [VALUE])',
                         description: 'set the state for a pen color parameter e.g. saturation'
                     }),
                     arguments: {

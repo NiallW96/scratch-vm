@@ -425,7 +425,7 @@ class Scratch3VideoSensingBlocks {
                     opcode: 'whenMotionGreaterThan',
                     text: formatMessage({
                         id: 'videoSensing.whenMotionGreaterThan',
-                        default: 'when video motion > [REFERENCE]',
+                        default: '@event when video motion > [REFERENCE] def [TEXT](self):',
                         description: 'Event that triggers when the amount of motion is greater than [REFERENCE]'
                     }),
                     blockType: BlockType.HAT,
@@ -433,7 +433,11 @@ class Scratch3VideoSensingBlocks {
                         REFERENCE: {
                             type: ArgumentType.NUMBER,
                             defaultValue: 10
-                        }
+                        },
+			TEXT: {
+			    type: ArgumentType.STRING,
+			    defaultValue: 'script_name'
+			}
                     }
                 },
                 {
